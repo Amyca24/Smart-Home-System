@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:weightSum="10">
+
+
+    <RelativeLayout
+        android:layout_weight="1.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:id="@+id/textConGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Connection"
+            android:textColor="@color/darkblue"
+            android:textSize="34sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/Bstatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="***Status***"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/darkblue"
+        android:gravity="center_horizontal" />
+
+    <!--Bluetooth Icon on/off -->
+    <ImageView
+        android:id="@+id/Bicon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <!--ON button -->
+
+    <!--OFF BUTTON-->
+
+    <Button
+        android:id="@+id/onBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:text="Turn On"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/offBtn"
+        android:minWidth="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Turn Off"/>
+
+    <!--Discoverable BUTTON-->
+    <Button
+        android:id="@+id/discoBtn"
+        android:minWidth="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Discoverable"/>
+
+    <!--Paired devices BUTTON-->
+    <Button
+        android:id="@+id/pairedBtn"
+        android:minWidth="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Turn on and search"/>
+
+    <!--Paired devices shown here-->
+    <TextView
+        android:id="@+id/pairedDevices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:text=""
+        android:textColor="@color/darkblue"/>
+
+    <!--Discovered devices BUTTON-->
+    <Button
+        android:id="@+id/connect"
+        android:minWidth="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Connect"/>
+
+    <!--Discovered devices shown here-->
+    <ListView
+        android:id="@+id/discoveredDevices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:text=""
+        android:textColor="@color/darkblue"/>
+
+
+</LinearLayout>
